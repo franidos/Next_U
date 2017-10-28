@@ -1,0 +1,27 @@
+
+body{
+	margin: 20px;
+	font-family: Verdana;
+}
+
+input{
+	background-color: gray;
+	color: white;
+	width: 32%;
+}
+
+#formulario	{
+	background: #268999;
+	top: 15%;
+	left: 35%;
+	width: 52%;
+	height: 35%;
+	padding: 10px 0px 0px 20px;
+border-top-right-radius: 20px;
+}
+
+button
+{
+	background: #741678;
+	color: white;
+}

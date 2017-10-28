@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mis notas</title>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <script  src="js/jquery-1.11.1.js"></script>   
+     <script  src="js/jquery.validate.js"></script>  
+    <script  src="js/proyectoJquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body style="background-color: beige" "> 
+
+<h1><em> Notas de la clase MATEMATICAS</em></h1>	
+
+<form id="formulario" method="post">
+	<div >
+		<h2 id="titulo">Registro de Estudiantes</h2>
+		<label name="codigo">Código:</label><br>
+		<input id="codigo" name="codigo" type="text"  class="required" /><br>
+		<label name="nombres">Nombres:</label><br>
+		 <input id="nombres" name="nombres" type="text"  class="required"/><br>
+		 <label name="nota">Nota:</label><br>
+		 <input id="nota" type="number"  name="nota" class="required" /><br>
+		 <br>
+	</div>
+</form>
+<button id="btnRegistrar">Registrar Estudiante</button>
+<button id="btnMostrar">Mostrar Estudiantes</button>
+<button id="btnPromedio" >Ver Nota promedio</button>
+<button id="btnMayorNota" >Estudiante mayor nota</button>
+<button id="btnMenorNota" >Estudiante menor nota</button>
+<br><br>
+<center><h2>Listado de Estudiantes</h2></center>
+<table align="center" id="estudiantes" border="1"></table>
+<div>
+	<p id="notaPromedio"></p>
+	<p id="mayorNota"></p>
+	<p id="menorNota"></p>
+</div>
+
+
+</body>
+</html>
