@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Juego de Damas Chinas</title>
+	 <meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/eventos.js"></script>
+	 <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+</head>
+<body>
+	<h1>Juego de Damas Chinas</h1>
+	<h3 id="turno"></h3>
+	<div id="contenedor">
+		<div id="row-1" class="row"> <!-- 1°Fila -->
+			<div class="col-blanca" data-row= "1" data-col="1" id="row-1-col-1"><div class="fichaRed" id="f1-row-1-col-1"></div></div>
+			<div class="col-negra" data-row= "1" data-col="2" id="row-1-col-2"></div>
+			<div class="col-blanca" data-row= "1" data-col="3" id="row-1-col-3"><div class="fichaRed" id="f1-row-1-col-3"></div></div>
+			<div class="col-negra" data-row= "1" data-col="4" id="row-1-col-4"></div>
+			<div class="col-blanca" data-row= "1" data-col="5" id="row-1-col-5"><div class="fichaRed" id="f1-row-1-col-5"></div></div>
+			<div class="col-negra" data-row= "1" data-col="6" id="row-1-col-6"></div>
+			<div class="col-blanca" data-row= "1" data-col="7" id="row-1-col-7"><div class="fichaRed" id="f1-row-1-col-7"></div></div>
+			<div class="col-negra" data-row= "1" data-col="8" id="row-1-col-8"></div>
+		</div>
+		<br>
+		<div id="row-2" class="row"> <!-- 2°Fila -->			
+			<div class="col-negra" data-row= "2" data-col="1" id="row-2-col-1"></div>
+			<div class="col-blanca" data-row= "2" data-col="2" id="row-2-col-2"><div class="fichaRed" id="f1-row-2-col-2"></div></div>
+			<div class="col-negra" data-row= "2" data-col="3" id="row-2-col-3"></div>
+			<div class="col-blanca" data-row= "2" data-col="4" id="row-2-col-4"><div class="fichaRed" id="f1-row-2-col-4"></div></div>
+			<div class="col-negra" data-row= "2" data-col="5" id="row-2-col-5"></div>
+			<div class="col-blanca" data-row= "2" data-col="6" id="row-2-col-6"><div class="fichaRed" id="f1-row-2-col-6"></div></div>
+			<div class="col-negra" data-row= "2" data-col="7" id="row-2-col-7"></div>
+			<div class="col-blanca" data-row= "2" data-col="8" id="row-2-col-8"><div class="fichaRed" id="f1-row-2-col-8"></div></div>
+		</div>
+		<br>
+		<div id="row-3" class="row"> <!-- 3°Fila -->
+			<div class="col-blanca" data-row= "3" data-col="1" id="row-3-col-1"><div class="fichaRed" id="f1-row-3-col-1"></div></div>
+			<div class="col-negra" data-row= "3" data-col="2" id="row-3-col-2"></div>
+			<div class="col-blanca" data-row= "3" data-col="3" id="row-3-col-3"><div class="fichaRed" id="f1-row-3-col-3"></div></div>
+			<div class="col-negra" data-row= "3" data-col="4" id="row-3-col-4"></div>
+			<div class="col-blanca" data-row= "3" data-col="5" id="row-3-col-5"><div class="fichaRed" id="f1-row-3-col-5"></div></div>
+			<div class="col-negra" data-row= "3" data-col="6" id="row-3-col-6"></div>
+			<div class="col-blanca" data-row= "3" data-col="7" id="row-3-col-7"><div class="fichaRed" id="f1-row-3-col-7"></div></div>
+			<div class="col-negra" data-row= "3" data-col="8" id="row-3-col-8"></div>
+		</div>
+		<br>
+		<div id="row-4" class="row"> <!-- 4°Fila -->			
+			<div class="col-negra" data-row= "4" data-col="1" id="row-4-col-1"></div>
+			<div class="col-blanca" data-row= "4" data-col="2" id="row-4-col-2"></div>
+			<div class="col-negra" data-row= "4" data-col="3" id="row-4-col-3"></div>
+			<div class="col-blanca" data-row= "4" data-col="4" id="row-4-col-4"></div>
+			<div class="col-negra" data-row= "4" data-col="5" id="row-4-col-5"></div>
+			<div class="col-blanca" data-row= "4" data-col="6" id="row-4-col-6"></div>
+			<div class="col-negra" data-row= "4" data-col="7" id="row-4-col-7"></div>
+			<div class="col-blanca" data-row= "4" data-col="8" id="row-2-col-8"></div>
+		</div>
+		<br>
+		<div id="row-5" class="row"> <!-- 5°Fila -->
+			<div class="col-blanca" data-row= "5" data-col="1" id="row-5-col-1"></div>
+			<div class="col-negra" data-row= "5" data-col="2" id="row-5-col-2"></div>
+			<div class="col-blanca" data-row= "5" data-col="3" id="row-5-col-3"></div>
+			<div class="col-negra" data-row= "5" data-col="4" id="row-5-col-4"></div>
+			<div class="col-blanca" data-row= "5" data-col="5" id="row-5-col-5"></div>
+			<div class="col-negra" data-row= "5" data-col="6" id="row-5-col-6"></div>
+			<div class="col-blanca" data-row= "5" data-col="7" id="row-5-col-7"></div>
+			<div class="col-negra" data-row= "5" data-col="8" id="row-5-col-8"></div>
+		</div>
+		<br>
+		<div id="row-6" class="row"> <!-- 6°Fila -->			
+			<div class="col-negra" data-row= "6" data-col="1" id="row-6-col-1"></div>
+			<div class="col-blanca" data-row= "6" data-col="2" id="row-6-col-2"><div class="fichaAzul" id="f2-row-6-col-2"></div></div>
+			<div class="col-negra" data-row= "6" data-col="3" id="row-6-col-3"></div>
+			<div class="col-blanca" data-row= "6" data-col="4" id="row-6-col-4"><div class="fichaAzul" id="f2-row-6-col-4"></div></div>
+			<div class="col-negra" data-row= "6" data-col="5" id="row-6-col-5"></div>
+			<div class="col-blanca" data-row= "6" data-col="6" id="row-6-col-6"><div class="fichaAzul" id="f2-row-6-col-6"></div></div>
+			<div class="col-negra" data-row= "6" data-col="7" id="row-6-col-7"></div>
+			<div class="col-blanca" data-row= "6" data-col="8" id="row-6-col-8"><div class="fichaAzul" id="f2-row-6-col-8"></div></div>
+		</div>
+		<br>
+		<div id="row-7" class="row"> <!-- 7°Fila -->
+			<div class="col-blanca" data-row= "7" data-col="1" id="row-7-col-1"><div class="fichaAzul" id="f2-row-7-col-1"></div></div>
+			<div class="col-negra" data-row= "7" data-col="2" id="row-7-col-2"></div>
+			<div class="col-blanca" data-row= "7" data-col="3" id="row-7-col-3"><div class="fichaAzul" id="f2-row-7-col-3"></div></div>
+			<div class="col-negra" data-row= "7" data-col="4" id="row-7-col-4"></div>
+			<div class="col-blanca" data-row= "7" data-col="5" id="row-7-col-5"><div class="fichaAzul" id="f2-row-7-col-5"></div></div>
+			<div class="col-negra" data-row= "7" data-col="6" id="row-7-col-6"></div>
+			<div class="col-blanca" data-row= "7" data-col="7" id="row-7-col-7"><div class="fichaAzul" id="f2-row-7-col-7"></div></div>
+			<div class="col-negra" data-row= "7" data-col="8" id="row-7-col-8"></div>
+		</div>
+		<br>
+		<div id="row-8" class="row"> <!-- 8°Fila -->			
+			<div class="col-negra" data-row= "8" data-col="1" id="row-8-col-1"></div>
+			<div class="col-blanca" data-row= "8" data-col="2" id="row-8-col-2"><div class="fichaAzul" id="f1-row-8-col-2"></div></div>
+			<div class="col-negra" data-row= "8" data-col="3" id="row-8-col-3"></div>
+			<div class="col-blanca" data-row= "8" data-col="4" id="row-8-col-4"><div class="fichaAzul" id="f1-row-8-col-4"></div></div>
+			<div class="col-negra" data-row= "8" data-col="5" id="row-8-col-5"></div>
+			<div class="col-blanca" data-row= "8" data-col="6" id="row-8-col-6"><div class="fichaAzul" id="f1-row-8-col-6"></div></div>
+			<div class="col-negra" data-row= "8" data-col="7" id="row-8-col-7"></div>
+			<div class="col-blanca" data-row= "8" data-col="8" id="row-8-col-8"><div class="fichaAzul" id="f1-row-8-col-8"></div></div>
+		</div>
+	</div>
+</body>
+
+</html>
