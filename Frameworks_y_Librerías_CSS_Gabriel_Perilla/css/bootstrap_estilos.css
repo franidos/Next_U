@@ -1,0 +1,153 @@
+body{
+  background: black;
+}
+footer{
+  position: fixed;
+  bottom: 10;
+}
+.container  {
+  background: aqua;
+  border-radius: 10px;
+}
+.logo {
+  width: auto;  
+  height: 100%;  
+}
+.redes {
+  display: flex;
+  width: 15%;
+  float: right;
+  padding-top: 120px;  
+}
+.btn-toolbar button{
+  list-style:  none;
+  margin: 7px;
+  width: 70%;
+}
+.btn-toolbar{
+  display: flex;
+  justify-content: space-around;  
+}
+div[class^="col-"]{ 
+  align-content: center;
+}
+.grid-column {
+  margin-top: 2px;  
+  border-radius: 10px;
+
+}
+
+p{
+  font-size: 120%;
+  color: gray;
+
+}
+img{
+  max-width: 100%;  
+  border-radius: 15%;
+
+}
+.comentario{
+  width: 90%;
+  float:  left;  
+  margin-top : 20px;
+}
+.comentario img{
+  max-width: 12%;  
+}
+
+textarea{
+   box-shadow: 2px 3px gray;   
+   margin-left: 2px;
+
+}
+
+.logo-img{
+  margin: 10px;
+  width: 70%;
+}
+.articulo{
+  margin-left: 20px;
+  margin-right: 20px;
+ 
+}
+.imagen{  
+  width: 30%;
+}
+
+#buscar{
+  width: 70%;
+}
+@media (max-width: 900px) {    
+      .logo {       
+       
+        float:  unset;
+        width: 120%;
+        padding-top: 2%;
+        padding-left: 30%;
+      }
+      .redes {
+       float:  unset; 
+        width: auto;
+        padding-top: 2%;
+        padding-left: 25%;
+      }
+
+      .btn-toolbar{
+        padding-left: 20%;
+        justify-content:  center;
+        display: block; 
+      }
+      div[class^="col-"]{
+       
+        align-content: center;
+      }
+      .grid-column {
+        margin-top: 2px;  
+        border-radius: 10px;
+
+      }
+
+      p{
+        font-size: 120%;
+        color: gray;
+
+      }
+      img{
+        max-width: 100%;  
+        border-radius: 15%;
+
+      }
+      .comentario{
+        width: 90%;
+        float:  left;  
+        margin-top : 20px;
+      }
+      .comentario img{
+        bottom: 20px;
+        min-width: 20%;  
+      }
+
+      textarea{
+         box-shadow: 1px 1px gray;   
+         margin-left: 2px;
+          min-width: 25%;  
+      }
+
+      .logo-img{
+        margin: 10px;
+        width: 30%;
+      }
+      .articulo{
+        margin-left: 20px;
+        margin-right: 20px;
+       
+      }
+      .imagen{  
+        width: 30%;
+      }
+
+      aside{
+        display: none;
+      }
+}

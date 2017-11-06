@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width = device-width, initial-scale=1" charset="utf-8">
+
+    <link rel="stylesheet" href="jquery.mobile-1.4.4.css">
+
+    <style type="text/css">
+    #paginaBusquedaPunto,
+    #divMapa {
+        width: 100%;
+        height: 400px;
+        padding: 0;
+    }
+
+    </style>
+
+
+    <script src="jquery-1.11.1.js"></script>
+    <script src="jquery.mobile-1.4.4.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+    <script type="text/javascript">
+
+
+  
+    $(document).ready(function() {
+
+
+        var marcador;
+        var mapa;
+        var latlngInicial = new google.maps.LatLng(25.760527, -80.192800); 
+
+
+
+        $("#btnBuscarPunto").click(function() {
+
+            convertirDireccion();
+           
+
+        });
+
+
+        function convertirDireccion() {
+            var direccion = $("#punto").val();
+            var geocoder = new google.maps.Geocoder();
+
+              $.mobile.loading("show", {            
+                text: "Buscando punto...",
+                            textVisible: true,
+                            theme: "a",
+                            textonly: false,
+                            html: ''    
+            });
+
+            geocoder.geocode({
+                'address': direccion
+            }, function(resultados, estado) {
+                if (estado == google.maps.GeocoderStatus.OK) {
+                        marcador = new google.maps.Marker({
+                        map: mapa,
+                        position: resultados[0].geometry.location
+                    });
+                     mapa.setCenter(resultados[0].geometry.location);
+                           $.mobile.loading("hide");
+                } else {
+                          $.mobile.loading("hide");
+                    alert('Error en el servicio!!: ' + estado);
+                }
+            });
+        }
+
+
+        function mostrarMapa() {
+
+  
+            var opciones = {            
+                zoom: 5,
+                center: latlngInicial,
+                mapTypeId: google.maps.MapTypeId.ROADMAP        
+            };
+
+                   
+            mapa = new google.maps.Map(document.getElementById("divMapa"), opciones);   
+
+            marcador = new google.maps.Marker({            
+                position: latlngInicial,
+                map: mapa,
+                title: "Mi punto!!"        
+            });
+                           
+        }
+
+        mostrarMapa();
+
+
+
+    })
+    </script>
+
+    <body>
+
+
+        <div data-role="page" id="paginaBusquedaPunto">
+            <div data-role="header">
+                <h1>Busqueda Punto</h1>
+            </div>
+            <div data-role="content">
+                <form>
+
+                    <div class="ui-field-contain">
+                        <label for="punto">Punto:</label>
+                        <input type="text" name="punto" id="punto">
+                    </div>
+
+                    <div class="ui-field-contain">
+                        <label for="nombre">Ubicacion:</label>
+                    </div>
+
+                    <div data-role="content" id="divMapa">
+
+
+                    </div>
+
+                    <a id="btnBuscarPunto" data-role="button">Buscar Punto</a>
+
+
+                </form>
+            </div>
+            <div data-role="footer">
+                <p align="center">Busqueda Punto</p>
+            </div>
+        </div>
+
+
+
+    </body>
+
+</html>

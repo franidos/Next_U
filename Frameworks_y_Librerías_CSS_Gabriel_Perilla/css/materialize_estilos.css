@@ -1,0 +1,61 @@
+body{
+  background:url('../img/materialize/fondo.jpg') no-repeat top center fixed; background-color:#d6d6d6;
+}
+
+.columna-principal{
+  width: 95%;
+  background-color: rgba(250,250,250,0.4);
+}
+
+.contenedor-write-publicacion{
+  min-height: 5rem;
+}
+.contenedor-publicacion{
+  min-height: 17rem;
+}
+.logo{
+  width: 240px;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  float: left;
+  overflow: scroll;
+  border-radius: 2px;
+}
+.slogan{
+  font-family: cursive;
+  float: left;
+  margin-left: 1rem;
+  margin-top: 4rem;
+  width: 190px;
+}
+
+.responsive-img{
+  border: 0.6rem solid  rgba(0,0,0,0.4);;
+  border-radius: 2px;
+}
+
+.contenedor-perfil img{ 
+  width: 50%;
+ border-radius: 50%;
+}
+.redes{
+  height: 550px;  
+}
+#publicacion-texto{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  resize: none;
+  border: 1px solid #ff8f00;
+  background-color: #ff8f00;
+  height: 3rem;
+  color: #fff;
+}
+article img
+{
+  width: 40%;
+}
+@media (max-width: 600px) {
+  .columna-grupos{
+    padding: 0 !important;
+  }
+}
