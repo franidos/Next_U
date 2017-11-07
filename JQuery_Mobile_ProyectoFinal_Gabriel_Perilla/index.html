@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name="viewport" content="width = device-width, initial-scale=1" charset="utf-8">
+<link rel="stylesheet" href="js/jquery.mobile-1.4.4.css">
+ <style type="text/css">
+    #mapa {
+        width: 100%;
+        height: 400px;
+        padding: 0;
+}
+</style>
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/jquery.mobile-1.4.4.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script src="js/hotel.js"></script>
+<body>
+    <div data-role="page" id="paginaInicio">
+        <div data-role="header">
+            <h1>Bienvenido a tus Hoteles</h1>
+        </div>
+        <div data-role="content">
+            <a id="btnRegistroHotel" class="ui-btn ui-icon-plus ui-btn-icon-left ui-shadow-icon">Registrar Hotel</a>
+            <a id="btnListarHoteles" class="ui-btn ui-icon-bars ui-btn-icon-left ui-shadow-icon">Listar Hoteles</a>
+        </div>
+        <div data-role="footer">
+            <p align="center">"Elige tu mejor descanso"</p>
+        </div>
+    </div>
+
+    <div data-role="page" id="paginaRegistroHotel">
+        <div data-role="header">
+            <h1>Registro hotel</h1>
+        </div>
+        <div data-role="content">
+            <form>
+                <div class="ui-field-contain">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre">                   
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" name="ciudad" id="ciudad">
+                    <label for="telefono">Telefono</label>
+                    <input type="text" name="telefono" id="telefono">   
+                     <label for="estrellas">estrellas:</label>                
+                    <select name="estrellas" id="estrellas">
+                        <option value="">Elija una opcion</option>
+                        <option value="1">1 estrella</option>
+                        <option value="2">2 estrellas</option>
+                        <option value="3">3 estrellas</option>
+                        <option value="4">4 estrellas</option>
+                        <option value="5">5 estrellas</option>
+                    </select>                   
+                </div>
+                <a id="btnGuardarhotel" class="ui-btn">Guardar</a>
+                <a class="ui-btn volver">Volver</a>
+            </form>
+        </div>
+    </div>
+
+    <div data-role="page" id="paginaInfoHoteles">
+        <div data-role="header">
+            <h1>Info hoteles</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" id="listaHoteles"  data-inset="true"></ul>
+            <label id="ubica" for="nombre">Ubicacion:</label>    
+            <div id="mapa"></div>
+            <a class="ui-btn volver">Volver</a>
+        </div>
+    </div>   
+</body>
+</html>

@@ -2,6 +2,7 @@
 var operaciones = [];
 var operacionCurrent = "";
 
+//Ajusta el comportamiento del boton
 function designClick(elem) {
 		elem.target.style.width = "18%";
 		elem.target.style.height = "50px";
@@ -18,10 +19,10 @@ function designClick(elem) {
 					elem.target.style.width = "22%";			
 				}
 				elem.target.style.height = "62.91px";
-			}, 20);
-		
+			}, 20);		
 }
 
+//Realiza las operaciones 
 function operar () {
 		var num1 = "";
 		var num2 = "";
@@ -62,14 +63,14 @@ function operar () {
 				operaciones[i+1] = res;
 			}			
 		}
-		res = res.toString().length > 8? res.toString().substring(0,8) : res;
-		return parseFloat(res);	
+		res = res.toString().length > 8? res.toString().substring(0,8) : res;		
 		operacionCurrent = parseFloat(res);
 		operaciones = [];
 		operaciones.push(operacionCurrent);
+		return parseFloat(res);	
 }
 
-
+//objeto literal con los metodos basicos
 var Calculadora = {
 	init: function(){
 		var teclas = document.getElementsByClassName("tecla");
@@ -78,8 +79,7 @@ var Calculadora = {
 			teclas[i].onclick = this.eventClick;			
 	    }
 	},
-	eventClick: function(elem) {
-		
+	eventClick: function(elem) {		
 		designClick(elem);
 		if(elem.target.id == "on"){
 			operaciones = [];
@@ -146,8 +146,7 @@ var Calculadora = {
 		document.getElementById("display").innerHTML = operacionCurrent != "" ? parseFloat(operacionCurrent) : operacionCurrent;	
 	}	
 }
-
-
+//Inicia la calculadora
 Calculadora.init();
 
 
