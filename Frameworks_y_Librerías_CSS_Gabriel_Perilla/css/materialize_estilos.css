@@ -1,12 +1,21 @@
-body{
-  background:url('../img/materialize/fondo.jpg') no-repeat top center fixed; background-color:#d6d6d6;
-}
 
+body{
+  background:url('../img/materialize/fondo.jpg') no-repeat top center  fixed; background-color:#d6d6d6;
+}
+.menu{
+  padding-top:  3%;
+  left: :  23%;
+  position:  relative ;
+  display:  block;
+  margin-left:  50%;
+}
 .columna-principal{
-  width: 95%;
+  margin-top: 1rem;
   background-color: rgba(250,250,250,0.4);
 }
-
+.contenedor-logo{
+  position: absolute;
+}
 .contenedor-write-publicacion{
   min-height: 5rem;
 }
@@ -14,12 +23,11 @@ body{
   min-height: 17rem;
 }
 .logo{
-  width: 240px;
+  width: 260px;
   margin-top: 2rem;
   margin-left: 5rem;
   float: left;
-  overflow: scroll;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 .slogan{
   font-family: cursive;
@@ -33,12 +41,12 @@ body{
   border: 0.6rem solid  rgba(0,0,0,0.4);;
   border-radius: 2px;
 }
-
 .contenedor-perfil img{ 
   width: 50%;
  border-radius: 50%;
 }
 .redes{
+  margin-top: 2rem;
   height: 550px;  
 }
 #publicacion-texto{
@@ -54,8 +62,46 @@ article img
 {
   width: 40%;
 }
-@media (max-width: 600px) {
-  .columna-grupos{
-    padding: 0 !important;
+@media (max-width: 990px) {
+    .logo{
+    width: 260px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    float: left;
+    border-radius: 8px;
+    display: grid;
   }
+  .slogan{
+    font-family: cursive;
+    font-size: 120%;
+    float: left;
+    margin-left: 1rem;
+    margin-top: 3rem;
+    width: 100%;
+
+  }
+  .barra-superior{
+    display:  inherit;  
+  }
+  .menu{
+     position: absolute;
+     font-size: 0px;
+     width:  5%;
+     padding-top:  2%;  
+    margin-left:  70%;
+   
+  }
+   .redes{ 
+    display:  none;
+  }
+
+  .contenedor-logo{
+     position: relative;
+      display:  inherit;
+
+  }
+  article img
+{
+  width: 70%;
+}
 }
