@@ -1,0 +1,31 @@
+[
+
+    {
+        "id": "bmw", 
+        "nombre": "Bmw R 1200",        
+        "model": 2017, 
+        "descripcion": "La BMW R 1200 GS componen una gama de motocicletas maxitrail​ fabricada por la compañía alemana BMW Motorrad desde el año 2004, sustituyendo a la BMW R1150GS",
+        "imageUrl": "img/motos/Bmw R 1200-1.jpg"               
+    },
+    {
+        "id": "honda", 
+        "nombre": "Honda Cbr500r",        
+         "model": 2015, 
+        "descripcion": "La CBR500R es una motocicleta deportiva de peso medio que ofrece gran diversión al mismo tiempo que funcionalidad, confort y bajos costos.",
+        "imageUrl": "img/motos/Honda Cbr500r-1.jpg"
+    },
+    {
+        "id": "Kawasaki", 
+        "nombre": "Kawasaki Ninja 300",        
+         "model": 2016, 
+        "descripcion": "Diseñada para asombrar, la nueva 300 ofrece una conducción impresionante, un nuevo diseño y gran comodidad, todo para convertirse en la más codiciada de su clase.",
+        "imageUrl": "img/motos/Kawasaki Ninja 300-1.jpg"
+    },
+    {
+        "id": "Kymco", 
+        "nombre": "Kymco Fly 125",        
+         "model": 2017, 
+        "descripcion": "La Kymco FLY 125 es ideal para quienes se animan a hacer su vida más fácil moviéndose por la ciudad con estilo y comodidad en una moto tipo scooter. Evoluciona y muévete fácil con la FLY 125.",
+        "imageUrl": "img/motos/Kymco Fly 125-1.jpg"
+    }
+]

@@ -1,0 +1,28 @@
+{ 
+    "id": "bmw", 
+    "nombre": "Bmw R 1200", 
+    "fabricante": { 
+        "nombre": "BMW", 
+        "pais": "Alemania"
+    }, 
+    "motor": { 
+        "tipo": "bóxer bicilíndrico", 
+        "marchas" :"6",
+        "transmision": "Manual", 
+        "arranque" : "electrico"
+    },    
+    "cilindraje" : "1170 cc",
+    "images": [
+        "img/motos/Bmw R 1200-2.jpg",
+        "img/motos/Bmw R 1200-3.jpg",
+        "img/motos/Bmw R 1200-4.jpg"
+    ],   
+    "tamanoPeso": { 
+        "dimensions": [
+            "953 mm (w)", 
+            "850 mm (h)", 
+            "2207 mm (l)"
+        ], 
+    "peso": "244 Kg"
+    }
+}

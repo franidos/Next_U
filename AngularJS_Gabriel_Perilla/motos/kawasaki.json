@@ -1,0 +1,28 @@
+{ 
+    "id": "Kawasaki", 
+    "nombre": "Kawasaki Ninja 300", 
+    "fabricante": { 
+        "nombre": "Kawasaki", 
+        "pais": "Japon"
+    }, 
+    "motor": { 
+        "tipo": "bicilíndrico", 
+        "marchas" :"6",
+        "transmision": "Manual", 
+        "arranque" : "electrico"
+    },    
+    "cilindraje" : "296 cc",
+    "images": [
+        "img/motos/Kawasaki Ninja 300-2.jpg",
+        "img/motos/Kawasaki Ninja 300-3.jpg",
+        "img/motos/Kawasaki Ninja 300-4.jpg"
+    ],   
+    "tamanoPeso": { 
+        "dimensions": [
+            "1110 mm (w)", 
+            "715 mm (h)", 
+            "2015 mm (l)"
+        ], 
+    "peso": "174 Kg"
+    }
+}

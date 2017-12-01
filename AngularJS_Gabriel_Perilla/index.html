@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="motoApp"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Motos">
+        <meta name="author" content="Gabriel Perilla">
+        <link rel="icon" href="../../favicon.ico">
+
+        <title>Motos potentes</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/jumbotron-narrow.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/animations.css">
+
+        <script src="js/jquery-1.10.2.js"></script>
+        <script src="js/angular.js"></script>
+        <script src="js/angular-animate.js"></script>
+        <script src="js/angular-route.js"></script> 
+        <script src="js/angular-resource.js"></script>
+        <script src="js/app.js"></script> 
+        <script src="js/animations.js"></script> 
+        <script src="js/controllers.js"></script> 
+        <script src="js/services.js"></script> 
+    </head>
+
+    <body ng-controller="MotoListCtrl"> <!-- se enlaza el controlador al body-->
+        <div class="container">
+            <div class="blog-masthead">         
+            <nav class="blog-nav">
+              <a class="blog-nav-item active" href="">Mejores Motos</a>
+            </nav>
+          </div>
+        </div>
+        <div ng-view class="container"></div>
+
+    </body>
+
+</html>

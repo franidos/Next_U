@@ -1,0 +1,28 @@
+{ 
+    "id": "Kymco", 
+    "nombre": "Kymco Fly 125", 
+    "fabricante": { 
+        "nombre": "Kymco", 
+        "pais": "Japon"
+    }, 
+    "motor": { 
+        "tipo": "monocilíndrica", 
+        "marchas" :"6",
+        "transmision": "Automática", 
+        "arranque" : "eléctrico"
+    },    
+    "cilindraje" : "124 cc",
+    "images": [
+        "img/motos/Kymco Fly 125-2.jpg",
+        "img/motos/Kymco Fly 125-3.jpg",
+        "img/motos/Kymco Fly 125-4.jpg"
+    ],   
+    "tamanoPeso": { 
+        "dimensions": [
+            "1130 mm (w)", 
+            "780 mm (h)", 
+            "1940 mm (l)"
+        ], 
+    "peso": "107 Kg"
+    }
+}

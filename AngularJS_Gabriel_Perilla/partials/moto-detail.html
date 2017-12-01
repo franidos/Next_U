@@ -1,0 +1,59 @@
+
+<div class="blog-header">
+  <h1 class="blog-title">{{moto.id}}</h1>
+  <p >{{moto.nombre}}</p>
+  <p class="lead blog-cilindraje">{{moto.cilindraje}}</p>
+</div>
+<div class="row">
+  <div class="col-sm-7 blog-main">
+    <div class="moto-images">
+      <img ng-src="{{img}}"
+           class="moto"
+           ng-repeat="img in moto.images"
+           ng-class="{active: mainImageUrl==img}">
+    </div>
+  </div>
+
+  <div class="col-sm-5 blog-sidebar">
+    <ul class="moto-thumbs">
+      <li ng-repeat="img in moto.images">
+        <img ng-src="{{img}}" ng-click="setImage(img)">
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+<ul class="ficha-Tecnica">
+  <li>
+    <span >Motor</span>
+    <dl>
+      <dt>Tipo</dt>
+      <dd>{{moto.motor.tipo}}</dd>
+      <dt>Marchas</dt>
+      <dd>{{moto.motor.marchas}}</dd>
+      <dt>Transmisión</dt>
+      <dd>{{moto.motor.transmision}}</dd>
+       <dt>Arranque</dt>
+      <dd>{{moto.motor.arranque}}</dd>
+    </dl>
+  </li> 
+  <li>
+    <span>Fabricante</span>
+    <dl>
+      <dt>Nombre</dt>
+      <dd>{{moto.fabricante.nombre}}</dd>
+      <dt>Pais</dt>
+      <dd>{{moto.fabricante.pais}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Tamaño y Peso</span>
+    <dl>
+      <dt>Dimensiones</dt>
+      <dd ng-repeat="d in moto.tamanoPeso.dimensions">{{d}}</dd>
+      <dt>Peso</dt>
+      <dd>{{moto.tamanoPeso.peso}}</dd>
+    </dl>
+  </li>
+</ul>

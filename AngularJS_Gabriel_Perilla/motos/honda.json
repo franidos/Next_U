@@ -1,0 +1,28 @@
+{ 
+    "id": "honda", 
+    "nombre": "Bmw R 1200", 
+    "fabricante": { 
+        "nombre": "Montesa-Honda", 
+        "pais": "Japon"
+    }, 
+    "motor": { 
+        "tipo": "transversal", 
+        "marchas" :"6",
+        "transmision": "cadena", 
+        "arranque" : "eléctrico"
+    },    
+    "cilindraje" : "471 cc",
+    "images": [
+        "img/motos/Honda Cbr500r-2.jpg",
+        "img/motos/Honda Cbr500r-3.jpg",
+        "img/motos/Honda Cbr500r-4.jpg"
+    ],   
+    "tamanoPeso": { 
+        "dimensions": [
+            "1410 mm (w)", 
+            "740 mm (h)", 
+            "2075 mm (l)"
+        ], 
+    "peso": "300 Kg"
+    }
+}
