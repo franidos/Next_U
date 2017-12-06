@@ -1,0 +1,56 @@
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 fondo">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-8">
+        <h2>Catalogo de productos</h2>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-8">
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-8">
+        <h3>¿Que estas buscando?</h3>
+        <input type="text" [(ngModel)]="objectsFilter.nombre" [value]="objectsFilter.nombre" placeholder="name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="scrollbar" id="style-2">
+        <div class="col-lg-3 col-md-3 col-sm-12" *ngFor="let image of arraylist | filterBy: objectsFilter">
+          <div class="thumbnail">
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <img [src]="image.url" class="imgsize">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <h3>{{image.nombre}}</h3>
+                <p>Precio: ${{image.precio}}</p>
+                <p>Unidades Disponibles: {{image.cantidad}}</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                    <a [routerLink]="['/amp/', image.nombre, image.precio, image.cantidad, image.url]" class="btn btn-primary" role="button">Ver Mas</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                    <a class="btn btn-default" role="button" (click)="loadStore($event, image.key, image.cantidad, image.nombre, image.precio, contador[image.key], image.url)">Añadir</a>
+                  </div>
+                  <div class="col-lg-4 col-md-4 col-sm-4" style="padding-right:50px">
+                    <div class="input-group spinner">
+                      <input type="text" class="form-control" value="{{contador[image.key]}}" readonly>
+                      <div class="input-group-btn-vertical">
+                        <button class="btn btn-default" type="button" (click)="up(image.key, image.cantidad, image.unidad)"><i class="glyphicon glyphicon-collapse-up"></i></button>
+                        <button class="btn btn-default" type="button" (click)="down(image.key, image.unidad)"><i class="glyphicon glyphicon-collapse-down"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

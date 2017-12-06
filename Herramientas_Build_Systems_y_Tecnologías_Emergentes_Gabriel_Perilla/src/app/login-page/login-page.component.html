@@ -1,0 +1,24 @@
+<div class="contenedor">
+
+  <div *ngIf="error" class="alert alert-warning" role="alert">
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+    <span class="sr-only">Error:</span>
+    {{error}}
+  </div>
+
+  <div class="col-sm-4 col-sm-offset-4 posdiv">
+    <h1>Inicia Secion</h1>
+    <form class="form" (submit)="loginWithEmail($event, email.value, password.value)">
+      <div class="form-group">
+        <label for="email">Correo Electronico</label>
+        <input #email type="email" id="email" class="form-control" ngModel name="email" placeholder="Email address" required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
+      </div>
+      <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input #password type="password" id="password" class="form-control" ngModel name="password" placeholder="Password" required="">
+      </div>
+      <button type="submit" class="btn btn-success center-block">Ingresar</button>
+    </form>
+  </div>
+
+</div>
