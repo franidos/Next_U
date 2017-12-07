@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 thumbnail">
+    <div >
+      <div style="float:left; width:60%;">
+        <img [src]="url" class="imgsize">
+      </div>
+      <div style="float:right; width:40%;">
+        <h2>{{nombre}}</h2>
+        <p>Precio: ${{precio}}</p>
+        <p>Unidades Disponibles: {{cantidad}}</p>
+      </div>
+    </div>
+    <div>
+      <a [routerLink]="['/']" class="btn btn-primary" role="button">Atras</a>
+    </div>
+  </div>
+</div>
