@@ -1,0 +1,26 @@
+<div class="row">
+	<div class="col-md-8 text-left"><h3>Catálogo de Productos</h3></div>
+	<div class="col-md-4 text-right">
+		<p>¿Que estas buscando? </p>
+		<input  #input class="form-control" placeholder="Buscar producto" id="search">
+	</div>
+</div>
+<div class="productos">
+	<div class="item" *ngFor="let item of productos | searchPipe: input.value">
+		<figure>
+			<img [src]="item.url" class="imagen">
+		</figure>
+		<div class="descripcion">
+			<h5>Nombre: {{item.nombre}}</h5>
+			<p>Precio:  {{item.precio}}</p>
+			<p>Unidades disponibles: {{item.unidades}}</p>
+			<div class="botones">
+				<a [routerLink]="['../descripcion',item.nombre]" class="btn btn-primary">Ver mas</a>
+				<button type="button" class="btn btn-success" (click)="onNewItem(item,inputx.value)">Añadir</button>
+				<input type="number" class="cantidad" value="1" #inputx>
+				
+			</div>
+		</div>
+	</div>
+	
+</div>

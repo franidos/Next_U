@@ -1,0 +1,71 @@
+[
+
+    {
+        "id": "1", 
+        "nombre": "aguacate",        
+        "precio": "20000", 
+        "unidades": "22", 
+        "subtotal": "1200000", 
+        "url": "https://firebasestorage.googleapis.com/v0/b/crud-58fe9.appspot.com/o/aguacate.jpg?alt=media&token=dceaaa2d-8601-4f37-8f20-364eb86c4a78"               
+    },
+    {
+         "id": "2", 
+        "nombre": "ajo",        
+        "precio": "46666", 
+        "unidades": "22", 
+        "subtotal": "3455", 
+        "url": "https://firebasestorage.googleapis.com/v0/b/crud-58fe9.appspot.com/o/ajo.jpg?alt=media&token=024f3b79-b676-4868-8917-5eebb8c7df42"         
+    },
+    {
+         "id": "3", 
+        "nombre": "almendras",        
+        "precio": "25544", 
+        "unidades": "22", 
+        "subtotal": "6767", 
+        "url": "https://firebasestorage.googleapis.com/v0/b/crud-58fe9.appspot.com/o/almendras.jpg?alt=media&token=91e192c4-27b0-485a-a371-2b4d9bfa54c4"         
+    },
+    {
+         "id": "4", 
+        "nombre": "arandanos",        
+        "precio": "34", 
+        "unidades": "22", 
+        "subtotal": "334", 
+        "url": "https://firebasestorage.googleapis.com/v0/b/crud-58fe9.appspot.com/o/arandanos.jpg?alt=media&token=0830c773-e71b-44ad-aa32-1e19259983da"         
+    },{
+         "id": "5", 
+        "nombre": "brocoli",        
+        "precio": "4555", 
+        "unidades": "23", 
+        "subtotal": "454545", 
+        "url": "https://firebasestorage.googleapis.com/v0/b/crud-58fe9.appspot.com/o/brocoli.png?alt=media&token=729f3100-031c-41a4-a071-e0426e3fd754"         
+    }
+    ,{
+         "id": "6", 
+        "nombre": "calabaza",        
+        "precio": "3344", 
+        "unidades": "15", 
+        "subtotal": "65745", 
+        "url": "https://firebasestorage.googleapis.com/v0/b/crud-58fe9.appspot.com/o/calabaza.jpg?alt=media&token=125d7f4c-7b09-425a-94f6-f87d66e767f7"         
+    },
+    {
+        "nombre":"canela",
+        "precio":"5",
+        "unidades":"44",
+        "subtotal": "7567", 
+        "url":"https://firebasestorage.googleapis.com/v0/b/crud-58fe9.appspot.com/o/canela.jpg?alt=media&token=e7f60b76-6a4e-4c6a-95ce-fa84d3d1e1da"
+    },
+    {
+        "nombre":"cebolla",
+        "precio":"6",
+        "unidades":"55",
+        "subtotal": "3434344", 
+        "url":"https://firebasestorage.googleapis.com/v0/b/crud-58fe9.appspot.com/o/cebolla.jpg?alt=media&token=4e57cafe-2ba5-4f7e-8d50-b3a5e86c9045"
+    },
+    {
+        "nombre":"fresa",
+        "precio":"31",
+        "unidades":"33",
+        "subtotal": "8566", 
+        "url":"https://firebasestorage.googleapis.com/v0/b/crud-58fe9.appspot.com/o/fresa.jpg?alt=media&token=12bd6477-6449-423c-9e59-8de2dbe7b11d"
+    }
+]

@@ -1,0 +1,16 @@
+<div class="login">
+<h3 class="titulo">Inicio Sesion</h3><br>
+  <form role="form" [formGroup]="myForm" (ngSubmit)="onSignin()">
+	<div class="form-group">
+		<label for="email">E-Mail</label>
+		<input formControlName="email" type="email" id="email" class="form-control">
+	</div>
+	<div class="input-group">
+		<label for="password">Password</label>
+		<input formControlName="password" type="password" id="password" class="form-control">
+	</div>
+
+	<button type="submit" [disabled]="!myForm.valid" class="btn btn-primary btn-lg">Sign In  <span class="glyphicon glyphicon-log-in"></span></button>
+	
+  </form>
+</div>

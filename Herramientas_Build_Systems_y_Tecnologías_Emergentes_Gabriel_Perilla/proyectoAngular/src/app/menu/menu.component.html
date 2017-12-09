@@ -1,0 +1,28 @@
+<header>
+	<nav class="navbar navbar-default">
+		<div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse"
+		            data-target=".navbar-ex1-collapse">
+		      <span class="sr-only">Desplegar navegación</span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		    </button>
+		    <a class="navbar-brand" href="#">La bodega</a>
+	  	</div>
+		<div class="container-fluid">
+			<ul class="nav navbar-nav" *ngIf="isLogout()">
+				<!-- <li><a [routerLink]="['singup']">Cerrar Sesion</a></li> -->
+				<li><a [routerLink]="['singin']">Iniciar Sesion</a></li>
+			
+			</ul>
+			<ul class="nav navbar-nav navbar-right" *ngIf="isAuth()">
+				<li><a [routerLink]="['itemcar']" class="glyphicon glyphicon-shopping-cart"><span class="badge">{{contador}}</span></a></li>
+				
+				<!--<li><button class="glyphicon glyphicon-shopping-cart btn" (click)="onShowCar()"><span class="badge">{{contador}}</span></button></li> -->
+				
+				<li><a (click)="onLogout()" class="glyphicon glyphicon-log-out" style="cursor: pointer;"></a></li>
+			</ul>
+		</div>
+	</nav>
+</header>

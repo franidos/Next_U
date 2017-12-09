@@ -1,0 +1,116 @@
+import React, { Component } from 'react'
+import 'bootstrap/dist/css/bootstrap.css'
+import { Route, BrowserRouter, Link, Redirect, Switch } from 'react-router-dom'
+import Login from './Login'
+import Register from './Register'
+import Home from './Home'
+import Dashboard from './protected/Dashboard'
+import Descripcion from './protected/Descripcion'
+import ItemCar from './protected/ItemCar'
+import { logout } from '../helpers/auth'
+import { firebaseAuth } from '../config/constants'
+import {totalcarro} from './protected/Dashboard'
+
+function PrivateRoute ({component: Component, authed, ...rest}) {
+  return (
+    <Route 
+      {...rest}
+      render={(props) => authed === true
+        ? <Component {...props} />
+        : <Redirect to={{pathname: '/login', state: {from: props.location}}} />}
+    />
+  )
+}
+
+function PublicRoute ({component: Component, authed, ...rest}) {
+  return (
+    <Route
+      {...rest}
+      render={(props) => authed === false
+        ? <Component {...props} />
+        : <Redirect to='/dashboard' />}
+    />
+  )
+}
+
+export default class App extends Component {
+  state = {
+    authed: false,
+    loading: true,
+    totalcarro: "4"
+  }
+  componentDidMount () {
+    this.removeListener = firebaseAuth().onAuthStateChanged((user) => {
+      if (user) {
+        this.setState({
+          authed: true,
+          loading: false,
+        })
+      } else {
+        this.setState({
+          authed: false,
+          loading: false
+        })
+      }
+    })
+  }
+  componentWillUnmount () {
+    this.removeListener()
+  }
+
+  verItemCar(){
+
+  }
+
+  render() {
+    return this.state.loading === true ? <h1>Cargando..</h1> : (
+      <BrowserRouter>
+        <div>
+          <nav className="navbar navbar-default navbar-static-top">
+            <div className="container">
+              <div className="navbar-header">
+                <Link to="/" className="navbar-brand">TiendaReactJS</Link>
+              </div>
+              <ul className="nav navbar-nav pull-right">
+                <li>
+                  <Link to="/dashboard" className="navbar-brand">Catalogo</Link>
+                </li>
+                <li>
+                  {this.state.authed
+                    ? 
+                      <span>
+                        <Link to="/itemcar" className="navbar-brand glyphicon glyphicon-shopping-cart btn"><span className="badge">{this.state.totalcarro}</span></Link>
+                        <button
+                          style={{border: 'none', background: 'transparent'}}
+                          onClick={() => {
+                            logout()
+                          }}
+                          className="navbar-brand">Logout</button>
+                      </span>
+                    : <span>
+                        <Link to="/login" className="navbar-brand">Login</Link>
+                        <Link to="/register" className="navbar-brand">Register</Link>
+                      </span>}
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div className="container">
+            <div className="row">
+              <Switch>
+                <Route path='/' exact component={Home} />
+                <PublicRoute authed={this.state.authed} path='/login' component={Login} />
+                <PublicRoute authed={this.state.authed} path='/register' component={Register} />
+                <PrivateRoute authed={this.state.authed} path='/dashboard' component={Dashboard} />
+                <PrivateRoute authed={this.state.authed} path='/descripcion/:nombre' component={Descripcion} />
+                <PrivateRoute authed={this.state.authed} path='/itemcar' component={ItemCar} />
+                
+                <Route render={() => <h3>No Match</h3>} />
+              </Switch>
+            </div>
+          </div>
+        </div>
+      </BrowserRouter>
+    );
+  }
+}

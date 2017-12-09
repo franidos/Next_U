@@ -1,0 +1,20 @@
+.login{
+	width: 500px;	
+	margin: 0 auto;
+	border: 2px solid black;
+	padding: 20px 20px 60px 20px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px black;
+	position: relative;
+}
+
+.titulo{
+	text-align: center;
+}
+
+
+
+form button{
+	position: absolute;
+	right: 20px;
+}

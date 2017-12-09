@@ -1,0 +1,12 @@
+.imagen{
+	width: 90%;
+}
+
+p{
+	font-size: 1.2em;
+}
+
+figure{
+	text-align: center;
+	border: 2px solid black;
+}

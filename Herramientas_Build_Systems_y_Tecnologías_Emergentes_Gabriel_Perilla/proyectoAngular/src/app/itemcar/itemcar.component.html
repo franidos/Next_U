@@ -1,0 +1,23 @@
+<h3>Carrito</h3>
+<div class="row">
+	<div class="col-sm-6">
+		
+		<div class="row lista" *ngFor="let key of keys">
+			<div class="col-sm-6">
+				<img [src]="shoppingcar[key].url" class="imagen"> </div>
+			<div class="col-sm-6">
+				<p>{{shoppingcar[key].nombre}}</p>
+				<p>Unidades: {{shoppingcar[key].unidades}}</p>
+				<p>Precio: {{shoppingcar[key].precio | currency:'USD':true:'1.2-2'}}</p>
+				<p>Subtotal: {{shoppingcar[key].subtotal | currency:'USD':true:'1.2-2'}}</p>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="col-sm-6">
+		<h3>Total: {{total | currency:'USD':true:'1.2-2'}}</h3>
+		<a [routerLink]="['/catalogo']" class="btn btn-default">Cancelar</a>
+		<a [routerLink]="['/catalogo']" class="btn btn-default">Pagar</a>
+	</div>
+</div>
