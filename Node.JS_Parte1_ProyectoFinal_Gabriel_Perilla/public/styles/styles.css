@@ -1,0 +1,41 @@
+
+.amarillo{
+	background-color: yellow;
+	display: inline-block;
+}
+.amarillo{
+	background-color: green;
+	display: inline-block;
+}
+#canvas{
+			border: solid 2px gray;
+			background: white;
+		}
+#opciones{
+	background-color: #eeeeee;
+}
+#users{
+	float: right;
+	padding-top: 10px;
+	padding-right: 25px
+}
+.footer {
+	background: blue;
+	text-align: center;
+	margin: 50px 0;
+	padding: 10px;
+	color: red;
+  } 
+
+ 
+.disp-superior{
+	display: inline-block;
+}
+.disp-inferior{
+	display: inline-block;
+	width: 230;
+	height: 200;
+	background-color: white;
+	cursor: pointer;
+
+}
