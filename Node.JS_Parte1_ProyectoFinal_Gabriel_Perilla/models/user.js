@@ -1,14 +1,12 @@
 
 
 
+//Modelo usuario
+
 const models = require('./mongoose');
 const validator = require('validator');
 const Schema = models.Schema; 
 
-
-
-
-//Modelo usuario
 var UserSchema = new Schema({
 	usuario: String,
 	password: String,

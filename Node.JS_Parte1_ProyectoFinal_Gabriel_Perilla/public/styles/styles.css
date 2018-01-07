@@ -1,12 +1,4 @@
 
-.amarillo{
-	background-color: yellow;
-	display: inline-block;
-}
-.amarillo{
-	background-color: green;
-	display: inline-block;
-}
 #canvas{
 			border: solid 2px gray;
 			background: white;
@@ -20,11 +12,11 @@
 	padding-right: 25px
 }
 .footer {
-	background: blue;
+	background: gray;
 	text-align: center;
 	margin: 50px 0;
 	padding: 10px;
-	color: red;
+	color: white;
   } 
 
  

@@ -2,18 +2,20 @@ var passport = require('passport');
 var passportTwitter = require('passport-twitter');
 var TwitterStrategy = passportTwitter.Strategy;
 
-var Usuario = require('../models/user');
- 
+var Usuario = require('../models/user'); 
 
  //Conexion a Twitter
 var twitterConnection = function(app){
-	passport.use(new TwitterStrategy({
+	passport.use(
+		new TwitterStrategy(
+		{
 			consumerKey: 'B6gngtDzHbUoIbi1gilQgof8q',
 			consumerSecret: 'l8kmeO1rInAb2WNr3I3kxti0yWxKi89o7XzXAia9mzFL3GwCHb',
 			callbackURL: 'http://127.0.0.1:3000/auth/twitter/callback'
 		},
 		function(token, tokenSecret, profile, done){
-			Usuario.findOne({'twitter.id': profile.id
+			Usuario.findOne({
+				'twitter.id': profile.id
 			},
 			function(err, user){
 				if(err){
@@ -22,8 +24,8 @@ var twitterConnection = function(app){
 				}
 				if(!user){
 					var usuario = new Usuario({
-						username: profile.username,
-						twitter: profile
+						username :  profile.username,
+						twitter : profile
 					});
 					var datos = JSON.stringify(eval("("+profile._raw+")"));
 					usuario.nombre = JSON.parse(datos).name;
@@ -43,7 +45,8 @@ var twitterConnection = function(app){
 			});
 		}));
 	app.get('/auth/twitter', passport.authenticate('twitter'));
-	app.get('/auth/twitter/callback', passport.authenticate('twitter',{successRedirect: '/galery', failureRedirect: '/error', failureFlash: 'Error...'}));
+
+	app.get('/auth/twitter/callback', passport.authenticate('twitter',{successRedirect: '/galery', failureRedirect: '/error'}));
 };
 
 module.exports = twitterConnection;

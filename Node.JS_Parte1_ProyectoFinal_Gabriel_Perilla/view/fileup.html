@@ -6,13 +6,13 @@
 		{% endblock %}
 
 	{% block form %}
+	<br><br>
 	<form role="form" action="/upload" method="POST" enctype="multipart/form-data">
 		<div class="form-group">
-			<input type="file" name="media">
-			<input 
-				type="submit" 
-				name="submit" value="Subir"
-				>
+			<input type="file" name="media"> 
+			<br><br>
+			<button class="btn btn-success" name="submit" >Guardar Imagen	</button> 
 		</div>
 	</form>
+
 	{% endblock %}

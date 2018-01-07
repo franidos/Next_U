@@ -31,7 +31,7 @@
  		});
  	}
 ));
-app.post('/login',  passport.authenticate('user', {successRedirect: '/galery', failureRedirect: '/error', failureFlash: 'Usuario o Password invalidos'}));
+app.post('/login',  passport.authenticate('user', {successRedirect: '/galery', failureRedirect: '/error', failureFlash: 'Usuario invalido'}));
  };
 
  module.exports = localConnection;

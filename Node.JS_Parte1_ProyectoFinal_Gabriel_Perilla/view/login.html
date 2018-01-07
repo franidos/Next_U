@@ -5,6 +5,13 @@ Inicio de sesión.
 {% endblock %}
 
 {% block form %}
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="">Bienvenido a Dibujos NodeJS</a>
+        </div>      
+    </div>
+</nav>
 <form role="form" action="/login" method="POST">
 	<div class="form-group">
 		<label for="usuario">Nombre User:</label>
@@ -12,12 +19,14 @@ Inicio de sesión.
 		<label for="password">Contrasena:</label>
 		<input type="password" name="password" id="password" class="form-control">
 	</div>
-	<button class="btn btn-default">Enviar</button>
+	<button class="btn btn-info">Ingresar</button>
+	<br><br>
 	<div class="form-group">
-		<p><a href="/registro">Registrar</a></p>
+		<p><a href="/registro">Deseas Registrarte?</a></p>
 	</div>
 	<div class="form-group">
 		<p>Entrar con <a href="/auth/twitter">Twitter</a></p>
 	</div>
 </form>
+
 {% endblock %}

@@ -1,9 +1,10 @@
 var Image = require('../models/image');
 var path = require('path');
-var formidable = require('formidable');
- 
+var formidable = require('formidable'); 
 
  //Controlador imagenes
+
+ //Funcion Cargar imagenes
 function uploadImage(req, res, next){
 	console.log('inciando carga...');
 	var form = new formidable.IncomingForm();
@@ -36,8 +37,7 @@ function uploadImage(req, res, next){
 	});
 };
 
-
-
+ //Funcion obtener imagenes
 function getImages(req, res, next){
 	Image.find({}).sort({}).exec(function(err, images){
 		if(err){
@@ -48,7 +48,6 @@ function getImages(req, res, next){
 		}
 	});
 };
-
 
 
 module.exports = {

@@ -12,12 +12,13 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="">Dibujo NodeJS</a>
+          <a class="navbar-brand" href="/galery">Inicio</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#/">Galeria</a></li>
-            <li><a href="/fileUp">Subir tus archivos</a></li>
+            <li class="active"><a href="/galery">Galeria</a></li>
+            <li><a href="/fileUp">Cargas imagenes</a></li>
+            <li><a href="/">Cerrar Sesion</a></li>
           </ul>
         </div>
     </div>
@@ -30,7 +31,7 @@
 		<br>
 		<br>
 		<div class="disp-superior">	
-		<h2>Thumbnail</h2>
+		<h2>Mis imagenes</h2>
 		<br>
 			<ul>
 				{% for img in images%}
@@ -46,7 +47,7 @@
 		</div>				
 	</div>
 </div>
-<footer class="footer"></footer>
+<footer class="footer">CopyRight - Mis dibujos 2017</footer>
 
 
 </body>

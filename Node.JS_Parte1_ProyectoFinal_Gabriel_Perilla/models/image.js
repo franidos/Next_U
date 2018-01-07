@@ -1,9 +1,9 @@
+
+
+//MOdelo para la imagen 
 var models = require('./mongoose');
 var Schema = models.Schema;
 
-
-
-//Modelo imagen user
 var imageSchema = new Schema({ 
 	imgName: String,
 	imgPath: String

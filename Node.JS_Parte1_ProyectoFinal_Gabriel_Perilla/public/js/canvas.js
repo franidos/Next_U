@@ -32,7 +32,7 @@ DrawCanvas = {
 		},
 		cargarImagen: function(imgName){
 			this.img.src = '/img/'+ imgName;
-			this.ctx.drawImage(img, 0, 0);
+			this.ctx.drawImage(img, 10, 10);
 		}
 };
 
@@ -55,7 +55,7 @@ $(document).ready(function(){
 		}
 	};
 
-	//Inicia el dibujo
+	//Inicia el lienzo de dibujo
 	DrawCanvas.inicio();
 
 
@@ -91,6 +91,8 @@ $(document).ready(function(){
 		
 		}
 	})
+
+	//Envia comunicado a los usuarios
 	socket.on('new user', function(usuarios){
 		$('#cuerpo-online').html('');
 		$.each(usuarios, function(i, usuario){
