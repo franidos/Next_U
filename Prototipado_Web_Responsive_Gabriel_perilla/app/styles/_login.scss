@@ -1,0 +1,29 @@
+
+@mixin border-radius($radius){
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+}
+
+.baseButton{
+  @include border-radius(8px);
+  width: 280px;
+}
+
+.facebookButton{
+  @extend .baseButton;
+  background-color: #7A92D6;
+}
+.twitterButton{
+  @extend .baseButton;
+  background-color: #84C6F7;
+}
+.googleButton{
+  @extend .baseButton;
+  background-color: #C64A3A;
+}
+.initButton{
+  @extend .baseButton;
+  background-color: orange;
+}
