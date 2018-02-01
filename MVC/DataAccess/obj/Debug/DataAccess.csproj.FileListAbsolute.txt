@@ -1,0 +1,12 @@
+c:\Users\User\documents\visual studio 2015\Projects\MVC\DataAccess\bin\Debug\DataAccess.dll.config
+c:\Users\User\documents\visual studio 2015\Projects\MVC\DataAccess\bin\Debug\DataAccess.dll
+c:\Users\User\documents\visual studio 2015\Projects\MVC\DataAccess\bin\Debug\DataAccess.pdb
+c:\Users\User\documents\visual studio 2015\Projects\MVC\DataAccess\bin\Debug\DTO.dll
+c:\Users\User\documents\visual studio 2015\Projects\MVC\DataAccess\bin\Debug\EntityFramework.dll
+c:\Users\User\documents\visual studio 2015\Projects\MVC\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\User\documents\visual studio 2015\Projects\MVC\DataAccess\bin\Debug\DTO.pdb
+c:\Users\User\documents\visual studio 2015\Projects\MVC\DataAccess\bin\Debug\EntityFramework.xml
+c:\Users\User\documents\visual studio 2015\Projects\MVC\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\User\documents\visual studio 2015\Projects\MVC\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+c:\Users\User\documents\visual studio 2015\Projects\MVC\DataAccess\obj\Debug\DataAccess.dll
+c:\Users\User\documents\visual studio 2015\Projects\MVC\DataAccess\obj\Debug\DataAccess.pdb

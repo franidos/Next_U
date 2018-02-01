@@ -1,0 +1,14 @@
+c:\Users\User\documents\visual studio 2015\Projects\MVC\InvService\bin\InvService.dll.config
+c:\Users\User\documents\visual studio 2015\Projects\MVC\InvService\bin\InvService.dll
+c:\Users\User\documents\visual studio 2015\Projects\MVC\InvService\bin\InvService.pdb
+c:\Users\User\documents\visual studio 2015\Projects\MVC\InvService\bin\DataAccess.dll
+c:\Users\User\documents\visual studio 2015\Projects\MVC\InvService\bin\DTO.dll
+c:\Users\User\documents\visual studio 2015\Projects\MVC\InvService\bin\EntityFramework.dll
+c:\Users\User\documents\visual studio 2015\Projects\MVC\InvService\bin\EntityFramework.SqlServer.dll
+c:\Users\User\documents\visual studio 2015\Projects\MVC\InvService\bin\DataAccess.pdb
+c:\Users\User\documents\visual studio 2015\Projects\MVC\InvService\bin\DTO.pdb
+c:\Users\User\documents\visual studio 2015\Projects\MVC\InvService\bin\EntityFramework.xml
+c:\Users\User\documents\visual studio 2015\Projects\MVC\InvService\bin\EntityFramework.SqlServer.xml
+c:\Users\User\documents\visual studio 2015\Projects\MVC\InvService\obj\Debug\InvService.csprojResolveAssemblyReference.cache
+c:\Users\User\documents\visual studio 2015\Projects\MVC\InvService\obj\Debug\InvService.dll
+c:\Users\User\documents\visual studio 2015\Projects\MVC\InvService\obj\Debug\InvService.pdb
