@@ -1,0 +1,8 @@
+D:\Projects\WebApp\BS\bin\Debug\BS.dll.config
+D:\Projects\WebApp\BS\bin\Debug\BS.dll
+D:\Projects\WebApp\BS\bin\Debug\BS.pdb
+D:\Projects\WebApp\BS\bin\Debug\DTO.dll
+D:\Projects\WebApp\BS\bin\Debug\DTO.pdb
+D:\Projects\WebApp\BS\obj\Debug\Bussiness.csprojResolveAssemblyReference.cache
+D:\Projects\WebApp\BS\obj\Debug\BS.dll
+D:\Projects\WebApp\BS\obj\Debug\BS.pdb
