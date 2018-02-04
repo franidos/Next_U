@@ -1,4 +1,0 @@
-D:\Projects\WebApp\DTO\bin\Debug\DTO.dll
-D:\Projects\WebApp\DTO\bin\Debug\DTO.pdb
-D:\Projects\WebApp\DTO\obj\Debug\DTO.dll
-D:\Projects\WebApp\DTO\obj\Debug\DTO.pdb

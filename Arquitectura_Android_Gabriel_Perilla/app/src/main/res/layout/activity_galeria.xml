@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.nextu.agencia.GaleriaActivity"
+    android:useDefaultMargins="true"
+    android:columnCount="2">
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/uno"
+        android:layout_width="@dimen/imagen_width"
+        android:layout_height="@dimen/imagen_height"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/dos"
+        android:layout_width="@dimen/imagen_width"
+        android:layout_height="@dimen/imagen_height"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/tres"
+        android:layout_width="@dimen/imagen_width"
+        android:layout_height="@dimen/imagen_height"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/cuatro"
+        android:layout_width="@dimen/imagen_width"
+        android:layout_height="@dimen/imagen_height"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/cinco"
+        android:layout_width="@dimen/imagen_width"
+        android:layout_height="@dimen/imagen_height"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/seis"
+        android:layout_width="@dimen/imagen_width"
+        android:layout_height="@dimen/imagen_height"
+        android:scaleType="centerCrop"/>
+
+</GridLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="app_nameGaleria">Galeria</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="olvide">Olvide mis datos</string>
+    <string name="inicia">Iniciar Sesión</string>
+    <string name="nombreusuario">Escribe tu nombre de usuario</string>
+    <string name="contrasena">Escribe tu contraseña</string>
+    <string name="appwidget_text">Gestor de Diseños</string>
+    <string name="add_widget">Add widget</string>
+    <string name="texto2">Nombre de Usuario</string>
+</resources>
